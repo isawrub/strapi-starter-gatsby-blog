@@ -32,12 +32,12 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={site.siteMetadata.title}
+      titleTemplate={`%s | ${site.siteMetadata.description}`}
       link={[
         {
           rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css?family=Staatliches",
+          href: "https://fonts.googleapis.com/css2?family=Roboto&family=Scope+One&display=swap",
         },
         {
           rel: "stylesheet",
