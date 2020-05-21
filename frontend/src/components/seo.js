@@ -33,7 +33,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={site.siteMetadata.title}
-      titleTemplate={`%s | ${site.siteMetadata.description}`}
+      titleTemplate={`%s`}
       link={[
         {
           rel: "stylesheet",
@@ -70,6 +70,10 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: `https://res.cloudinary.com/isawrub/image/upload/v1590074254/isawrub-media/Quant-2019-ColorCorrected_wbnfix.jpg`,
         },
         {
           property: `og:type`,
